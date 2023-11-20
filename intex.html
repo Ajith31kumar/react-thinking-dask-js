@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product List</title>
+</head>
+<body>
+
+<div id="productList">
+    <label for="search"></label>
+    <input type="text" id="search" placeholder="Search..." oninput="filterProducts()">
+
+    <div>  
+        <label for="showInStock">
+            <input type="checkbox" id="showInStock" onclick="filterProducts()"> Only show products in stock
+        </label>
+    </div>  
+    <h3><span>name</span> price</h3>
+
+    <h2>Fruits</h2>
+    <div class="product" data-category="Fruits" data-stock="true">
+        <p><strong>Apple</strong>  $1</p>
+    </div>
+    <div class="product" data-category="Fruits" data-stock="true">
+        <p><strong>Dragonfruit</strong>  $2</p>
+    </div>
+    <div class="product" data-category="Fruits" data-stock="false" style="color: red;">
+        <p><strong>Passionfruit</strong> $1</p>
+    </div>
+
+    <h2>Vegetables</h2>
+    <div class="product" data-category="Vegetables" data-stock="true">
+        <p><strong>Spinach</strong>  $2</p>
+    </div>
+    <div class="product" data-category="Vegetables" data-stock="false" style="color: red;">
+        <p><strong>Pumpkin </strong> $4</p>
+    </div>
+    <div class="product" data-category="Vegetables" data-stock="true">
+        <p><strong>Peas</strong>  $1</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

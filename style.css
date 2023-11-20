@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.search-container {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+}
+/* Add this to your styles.css file */
+.red-text {
+    color: red;
+}
